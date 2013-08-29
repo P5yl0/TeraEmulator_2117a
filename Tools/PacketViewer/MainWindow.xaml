@@ -1,0 +1,41 @@
+﻿<Window x:Class="PacketViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="648" Width="898">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="684*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="145*"/>
+        </Grid.RowDefinitions>
+
+        <Popup Name="myPopup">
+            <TextBlock Name="myPopupText" Background="LightBlue"  Foreground="Blue"> Popup Text</TextBlock>
+        </Popup>
+
+        <Menu Height="24" VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <MenuItem Header="Menu">
+                <MenuItem Header="Open stream" Click="OpenFile" />
+                <MenuItem Header="Exit" Click="Exit" />
+            </MenuItem>
+            <MenuItem Name="MacrosMenuItem" Header="Macros" />
+        </Menu>
+
+        <ListBox Name="PacketsList" Margin="10,93,0,10" Grid.Row="1" SelectionChanged="OnPacketSelect"/>
+
+        <RichTextBox Name="TextBox" Grid.Column="1" Margin="10,93,10,10" Grid.Row="1" VerticalScrollBarVisibility="Visible" />
+        <RichTextBox Name="HexTextBox" Grid.Column="1" Margin="10,10,10,0" Grid.Row="1" VerticalScrollBarVisibility="Visible" Height="76" VerticalAlignment="Top" />
+
+        <ComboBox Name="PacketNamesList" Margin="10,10,34,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button Content=">" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Click="FindByName" HorizontalAlignment="Right" Width="29"/>
+
+        <TextBox Name="HexBox" Margin="10,37,34,0" Grid.Row="1" TextWrapping="Wrap" Text="Find Hex" VerticalAlignment="Top"/>
+        <Button Content=">" Margin="0,37,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="29" Click="FindByHex"/>
+
+        <TextBox Name="OpCodeBox" Margin="10,64,34,0" Grid.Row="1" TextWrapping="Wrap" Text="Find OpCode" VerticalAlignment="Top"/>
+        <Button Content=">" Margin="0,64,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="29" Click="FindByOpCode"/>
+    </Grid>
+</Window>

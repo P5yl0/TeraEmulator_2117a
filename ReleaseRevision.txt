@@ -1,0 +1,10 @@
+SrcRegVer: 246750
+ReleaseName: LIVE-21.17 GF #11
+Version: LIVE-21.17 GF #11
+ReleaseDate: 2013-08-13 오후 7:23:49
+ShareRevision: 246750
+ClientRevision: 246750
+ServerRevision: 246745
+ReleaseDataRevision: 66776
+WebAppRevision: 245439
+TeraReleaseName: LIVE-21.17 GF #11

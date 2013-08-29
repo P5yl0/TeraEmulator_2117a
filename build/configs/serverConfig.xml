@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<server_configuration>
+
+Max Level
+<level_Cap>60</level_Cap>
+Server Rates
+<server_Rates>10</server_Rates>
+Welcome Message
+<welcome_Message>Welcome to tera-project - development server!!!</welcome_Message>
+
+</server_configuration>

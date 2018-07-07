@@ -1,6 +1,5 @@
-<b>TeraEmulator_2117a</b></br>
-<b>==================</b></br>
-</br>
+<b>TeraEmulator_2117a</b>
+<b>==================</b>
 SrcRegVer: 246750</br>
 ReleaseName: LIVE-21.17 GF #11</br>
 Version: LIVE-21.17 GF #11</br>
@@ -16,7 +15,7 @@ TeraReleaseName: LIVE-21.17 GF #11</br>
 </br>
 Client: Revision 2117 EU
 </br>
-Client Download Link: http://puu.sh/2LrWv.rar
+Client Download Link: ---
 </br>
 </br>
 <b>Support me on Ko-fi:</b>
